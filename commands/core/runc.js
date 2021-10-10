@@ -1,12 +1,19 @@
 module.exports = {
+name: ["run"],
+
+type: ["owner"],
+description: "set status",
+utilisation: userbot.prefix + "run",
+
 async execute(m) {
 
  let { conn, text } = data
 if (new Date() * 1 > 1000) {
 
 const uptime = process.uptime();
-
+setInterval(() => {
 conn.setStatus(`BOT AKTIF : ${count(uptime)} | BOT DIBUAT OLEH FEAR TEAM`)
+   }, 2000000)
   }
  }
 }
