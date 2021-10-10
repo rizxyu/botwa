@@ -23,8 +23,8 @@ async execute(m) {
     }
    let res = await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkabupaten.json')
     if (!res.ok) throw eror
-    let data = await res.json()
-    let json = data[Math.floor(Math.random() * data.length)]
+    let dot = await res.json()
+    let json = dot[Math.floor(Math.random() * dot.length)]
     let caption = `
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}tekb untuk bantuan
