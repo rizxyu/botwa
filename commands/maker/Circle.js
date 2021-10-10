@@ -13,6 +13,6 @@ async execute(m) {
 let { conn } = data
 const name = conn.getName(m.sender)
 
-Canvas.circle(await conn.getProfilePicture(from)).then((p) => conn.sendFile(m.chat, p, 'pp.jpg', 'done', m))}
+Canvas.circle(await conn.getProfilePicture(m.sender)).then((p) => conn.sendFile(m.chat, p, 'pp.jpg', 'done\n Made with canvas', m))}
 }
 
