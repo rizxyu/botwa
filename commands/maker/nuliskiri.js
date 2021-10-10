@@ -16,6 +16,6 @@ async execute(m) {
 
 let res = await fetch(`https://hardianto.xyz/api/nuliskiri?text=${text}&apikey=hardianto`)
 
-conn.sendFile(m.chat, res, 'kertas.jpg', 'Sudah Jadi jangan lupa support bot kami ya', m)
+conn.sendButImg(m.chat, res, 'DONE', 'Sudah Jadi jangan lupa support bot kami ya','OK','OK', m)
    }
 }
