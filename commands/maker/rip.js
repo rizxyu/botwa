@@ -1,6 +1,6 @@
 const fs = Ft.fs
 const fetch = require("node-fetch")
-var { canvas } = require("canvacord")
+var { Canvas } = require("canvacord")
 
 module.exports = {
 name: ["rip"],
@@ -13,7 +13,7 @@ async execute(m) {
 let { conn } = data
 const name = conn.getName(m.sender)
 
-canvas.rip(await conn.getProfilePicture(m.sender)).then((p) => 
+Canvas.rip(await conn.getProfilePicture(m.sender)).then((p) => 
 conn.sendFile(m.chat, p, 'p.jpg', `Telah meninggal ${conn.getName(m.sender)}`, null, m))
 }
 }
