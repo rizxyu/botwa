@@ -3,12 +3,12 @@ const fetch = require("node-fetch")
 
 module.exports = {
 
-name: ["estetik"],
+name: ["cecan"],
 
 type: ["random"],
 useLimit: true,
-description: "aesthetic foto",
-utilisation: userbot.prefix + "estetik",
+description: "cecan foto",
+utilisation: userbot.prefix + "cecan",
 
 async execute(m) {
  let { conn, text } = data
