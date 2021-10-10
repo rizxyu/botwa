@@ -1,5 +1,6 @@
 const fs = Ft.fs
-const { canvas } = require("canvacord")
+const fetch = require("node-fetch")
+var { canvas } = require("canvacord")
 
 module.exports = {
 name: ["rip"],
