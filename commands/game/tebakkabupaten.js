@@ -1,3 +1,4 @@
+const fs = Ft.fs
 let fetch = require('node-fetch')
 let timeout = 120000
 let poin = 500
@@ -13,6 +14,7 @@ utilisation: userbot.prefix + "tebakkabupaten",
 
 async execute(m) {
  let { conn } = data
+
   conn.tebakkabupaten = conn.tebakkabupaten ? conn.tebakkabupaten : {}
     let id = m.chat
     if (id in conn.tebakkabupaten) {
