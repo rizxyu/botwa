@@ -10,6 +10,7 @@ description: "make Rip picture",
 utilisation: userbot.prefix + "rip",
 
 async execute(m) {
+let { conn } = data
 const name = conn.getName(m.sender)
 
 canvas.rip(await conn.getProfilePicture(m.sender)).then((p) => 
