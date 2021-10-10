@@ -12,6 +12,6 @@ async execute(m) {
 const name = conn.getName(m.sender)
 
 canvas.rip(await conn.getProfilePicture(m.sender)).then((p) => 
-conn.sendButImg(m.chat, p, `Telah meninggal ${conn.getName(m.sender)}`, `Botol`, `innalilahi`, `innalilahi`, m))
+conn.sendFile(m.chat, p, 'p.jpg', `Telah meninggal ${conn.getName(m.sender)}`, null, m))
 }
 }
