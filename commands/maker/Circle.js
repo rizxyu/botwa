@@ -15,4 +15,4 @@ const name = conn.getName(m.sender)
 
 Canvas.circle(await conn.getProfilePicture(from)).then((p) => conn.sendFile(m.chat, p, 'pp.jpg', 'done', m))}
 }
-}
+
