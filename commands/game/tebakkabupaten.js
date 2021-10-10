@@ -27,7 +27,7 @@ async execute(m) {
     let json = dot[Math.floor(Math.random() * dot.length)]
     let caption = `
 Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}tekb untuk bantuan
+Ketik ${userbot.prefix}tekb untuk bantuan
 Bonus:  XP
 `.trim()
   conn.tebakkabupaten[id] = [
