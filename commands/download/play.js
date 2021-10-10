@@ -1,5 +1,5 @@
 const fs = Ft.fs
-const { servers, yta, ytv } = require('../lib/y2mate')
+const { servers, yta, ytv } = require('../../lib/y2mate.js')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 
