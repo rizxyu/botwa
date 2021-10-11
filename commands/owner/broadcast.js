@@ -17,7 +17,7 @@ utilisation: userbot.prefix + "bc <args>",
   
   m.reply(`Sedang mengirim pesan ${chats.length}\nestimasi selesai *${chats.length * 1.5} detik*`)
   
- for (chats) {
+ if (chats) {
    await delay(1500)
    await conn.sendButtonLoc( m.chat, await ( await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa1pVfdb1zUoSve4Unc08jl5BpCHwfys8qxA&usqp=CAU')).buffer(), `${teks}\n\n[ BROADCAST ]`, `Made With ❣️ Fear Team`, `CREATOR`, `y`, m)
     }
