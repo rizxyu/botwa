@@ -13,7 +13,7 @@ let { conn, text } = data
 let res = await fetch(`https://api.zeks.me/api/jadwalsholat?apikey=apivinz&daerah=${text}`)
 let json = await res.json()
 
-if (json.status) return m.reply(`${json.listdaerah}`)
+//if (json.status) return m.reply(`${json.listdaerah}`)
 let cp = `
 ${json.data.string}
 
