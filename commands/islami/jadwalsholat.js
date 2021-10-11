@@ -2,7 +2,7 @@ let fetch = require("node-fetch")
 
 module.exports = {
 name: ["jsholat"],
-type: ["maker"],
+type: ["Islami"],
 useLimit: true,
 description: "jadwal sholat",
 utilisation: userbot.prefix + "jsholat [Kota]",
